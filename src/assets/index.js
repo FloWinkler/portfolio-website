@@ -2,7 +2,6 @@ import logo from "./logo.svg";
 import github from "./github.png";
 import menu from "./menu.svg";
 import finish from "./finish.png";
-import portrait from "./portrait.png";
 
 import certificate from "./certificate.png";
 import efz from "./efz.png";
@@ -23,6 +22,7 @@ import sun from "./company/sun.png";
 import mercury from "./company/mercury.png";
 import earth from "./company/earth.png";
 import venus from "./company/venus.png";
+import mars from "./company/mars.png";
 
 import portfolio from "./portfolio.png";
 import bookingsystem from "./bookingsystem.png";
@@ -33,7 +33,6 @@ export {
   menu,
   finish,
   github,
-  portrait,
 
   certificate,
   efz,
@@ -54,6 +53,7 @@ export {
   mercury,
   earth,
   venus,
+  mars,
 
   portfolio,
   bookingsystem,

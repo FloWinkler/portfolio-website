@@ -10,7 +10,8 @@ const Dog = () => {
 
   return (
     <mesh>
-    {/* <hemisphereLight intensity={0.15} groundColor='black' /> */}
+      <hemisphereLight intensity={0.15} groundColor='black' />
+      <ambientLight intensity={1} />
       <pointLight 
         castShadow
         shadowMapSizeWidth={1024}
@@ -49,7 +50,8 @@ const DogCanvas = () => {
         <OrbitControls
           autoRotate
           autoRotateSpeed={5}
-        
+          
+          minDistance={3.5}
           // maxPolarAngle={Math.PI / 2}
           // minPolarAngle={Math.PI / 2}
         />

@@ -41,7 +41,7 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}  >Introduction</p>
+        <p className={styles.sectionSubText}  >Getting Started</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
@@ -49,10 +49,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I am excited to showcase my skills 
-        as a software developer after successfully completing a Full-Stack Bootcamp. 
-        I am currently seeking opportunities for an internship or trainee program 
-        to further enhance my programming abilities.
+        I’m always looking to push my abilities further and am excited about the next opportunity to grow as a developer.
       </motion.p>
      {/* added className='w-[500px]' for child "w-full" */}
       <div className='mt-20 flex flex-wrap gap-10 '>

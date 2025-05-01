@@ -30,7 +30,7 @@ const ProjectCard = ({
           speed: 450,
         }}
         // className='blue-pink-gradient p-[1.5px] rounded-[20px]';
-        className='bg-tertiary p-5 rounded-[20px] sm:w-[360px] w-full shadow-card'
+        className='bg-tertiary p-5 rounded-[20px] sm:w-[360px] w-full'
         >
         <div className='relative w-full h-[230px]'>
           <img
@@ -87,8 +87,8 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my newly acquired skills and 
-          experience demonstrating my ability to tackle real-world challenges. 
+          These projects reflect my development experience and problem-solving approach, 
+          highlighting practical applications of what I've learned so far.
           Each project is briefly described with links to code repositories.
           
         </motion.p>

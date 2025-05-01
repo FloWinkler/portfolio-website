@@ -18,6 +18,7 @@ import {
   mercury,
   earth,
   venus,
+  mars,
 
   portfolio,
   bookingsystem,
@@ -107,9 +108,22 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Avaloq Developer",
+    company_name: "Ayaval AG",
+    icon: sun,
+    iconBg: "#fde047",
+    points: [
+      "Avaloq Development: Core banking solutions & parameterization.",
+      "Regulatory Reports: PSD & MLAR for UK and EU private banks.",
+      "Implementation: Validations, scripting, workflows, report writing.",
+      "Analysis & Testing: Ensured accuracy of credit reporting logic.",
+      "Collaboration: Worked with teams to meet compliance standards.",
+    ],
+  },
+  {
     title: "Full-Stack Bootcamp",
     company_name: "Constructor Learning",
-    icon: sun,
+    icon: mercury,
     iconBg: "#fde047",
     points: [
       "Frontend Section: HTML, CSS, Javascript, React, Redux.",
@@ -122,7 +136,7 @@ const experiences = [
   {
     title: "Operations",
     company_name: "PostFinance",
-    icon: mercury,
+    icon: venus,
     iconBg: "#fde047",
     points: [
       "Worked in the back office, specializing in private clients, where I provided administrative support and customer service.",
@@ -133,7 +147,7 @@ const experiences = [
   {
     title: "Apprenticeship",
     company_name: "Lindt & Sprüngli (Schweiz) AG",
-    icon: venus,
+    icon: earth,
     iconBg: "#fde047",
     points: [
       "International Distributors ",
@@ -150,7 +164,7 @@ const experiences = [
   {
     title: "More...",
     company_name: "Foundation OrphanHealthcare · Coop · Planzer · Keller Früchte + Gemüse AG ",
-    icon: earth,
+    icon: mars,
     iconBg: "#fde047",
     points: [
       "Foundation: As an Executive Assistant, I served in the field of service and administration, undertaking event planning responsibilities and carrying out various administrative tasks.",
@@ -189,9 +203,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Portfolio Webpage",
+    name: "Portfolio Website",
     description:
-      "In this project, I aimed to improve my existing skills while also learning something new. To accomplish this, I enrolled in an online course on THREE.js and utilized TailwindCSS for the first time.",
+      "With this website, I wanted to experiment with interactive 3D models and motion effects, while keeping the design fully responsive. I used Three.js for dynamic visuals and TailwindCSS to streamline the styling process.",
     tags: [
       {
         name: "react",
