@@ -205,16 +205,23 @@
   }
 }
 
-.html-screen iframe{
-  height: 200px;
+.html-screen iframe {
   width: 305px;
+  height: 200px;
   border: none;
-  border-radius: 10px;
-  background: #252a3a;
+  border-radius: 20px;
+  background: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  .html-screen iframe {
+    width: 200px;
+    height: 140px;
+  }
 }
 
 .html-screen {
-position: fixed;
+  position: fixed;
 }
 
 .underline-yellow {

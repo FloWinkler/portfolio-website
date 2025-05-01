@@ -7,11 +7,20 @@ import "../../index.css";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./models/laptop.gltf");
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    // Small delay to ensure proper positioning
+    const timer = setTimeout(() => setIsReady(true), 500);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <mesh
     rotation-y={5}
     >
       <hemisphereLight intensity={0.15} groundColor='black' />
+      <ambientLight intensity={1} />
       <pointLight intensity={1} position={[-20, 50, 10]}/>
       <spotLight
         position={[-20, 50, 10]}
@@ -26,16 +35,20 @@ const Computers = ({ isMobile }) => {
         scale={isMobile ? 0.7 : 1 }
         position={isMobile ? [0, -3, -2.2] : [0, -1.5, -1.5]}
       />
+      {isReady && (
         <Html
           transform
           wrapperClass="html-screen"
-          distanceFactor={ 1.17 }
+          distanceFactor={1.17}
           scale={isMobile ? 0.7 : 3.4}
-          position={[ 0, 0.05, -2.9 ]}
-          rotation-x={ - 0.256 }
+          position={[0, 0.05, -2.9]}
+          rotation-x={-0.256}
+          center
+          portal={{ current: null }}
         >
           <iframe src="https://chess-game-inky.vercel.app/" />
         </Html>
+      )}
     </mesh>
   );
 };
